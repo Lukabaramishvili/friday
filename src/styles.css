@@ -44,8 +44,13 @@ body {
   padding: 0 16px 16px;
 }
 
+.title-text {
+  margin-top: 3rem;
+  text-align: center;
+}
+
 input.search {
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 50px;
   border-width: 0.5px;
   border-style: solid;
@@ -163,8 +168,12 @@ a {
   color: #fff;
 }
 
+.vehicle-title {
+  padding-left: 15px;
+}
+
 .back-btn {
-  padding-left: 1rem;
+  padding-left: 15px;
   color: #6400e4;
   font-size: 16px;
   font-weight: 500;

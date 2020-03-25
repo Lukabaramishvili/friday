@@ -7,7 +7,7 @@ class MakesList extends Component {
     const { makes, handleSelect } = this.props
     return (
       <div>
-        <h3>List of Manufacturers</h3>
+        <h3>Manufacturers</h3>
         <ul>
         {
           makes.map((make, id) => {

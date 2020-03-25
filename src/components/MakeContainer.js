@@ -63,6 +63,7 @@ class MainContainer extends Component {
       return (
         <div>
           <form className="car-form">
+          <h3 className="title-text">Find Your Car</h3>
           <Search handleInputChange={this.handleInputChange} inputText={inputText}/>
           {
             make === '' ?

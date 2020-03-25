@@ -42,7 +42,7 @@ class VehiclesList extends Component {
       }
       return (
         <>
-        <h3>List of Vehicles</h3>
+        <h3 className="vehicle-title">Vehicles</h3>
         <a className="back-btn" href='/selectVehicle'>Back</a>
         <div className="vehicle-container">
           {
