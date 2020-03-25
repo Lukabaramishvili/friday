@@ -4,8 +4,6 @@ import NotAvailable from '../utils/NotAvailable';
 import Spinner from '../utils/Spinner';
 
 class VehiclesList extends Component {
-
-
     state = {
       error: null,
       vehicles: [],

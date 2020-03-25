@@ -1,16 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class NoMatchPage extends Component {
-
-  render() {
+export default () => {
     return (
       <div className="simple-container">
         <p>Error 404 - No Such Page</p><br />
         <a href='/selectVehicle' className="a-btn">Return Home</a>
       </div>
     );
-  }
-
 }
-
-export default NoMatchPage;

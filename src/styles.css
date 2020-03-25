@@ -9,14 +9,13 @@ body {
 
 .home {
   text-align: center;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .start-button {
   background-color: #6400e4;
-  font-family: inherit;
   border-radius: 30px;
-  width: 50%;
+  width: 30%;
   margin: auto;
   color: #fff;
   display: block;
@@ -27,6 +26,17 @@ body {
   transition: 0.3s linear all;
 }
 
+.nav-container {
+  background: #fff;
+  min-height: 3rem;
+}
+
+.logo-container {
+  width: 100px;
+  height: 50px;
+  padding-left: 10px;
+}
+
 .car-form {
   position: relative;
   max-width: 800px;
@@ -35,7 +45,7 @@ body {
 }
 
 input.search {
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 50px;
   border-width: 0.5px;
   border-style: solid;
@@ -75,6 +85,7 @@ ul {
   background-color: inherit;
   font-size: inherit;
   font-weight: inherit;
+  cursor: pointer;
 }
 
 .list-btn:hover {
@@ -137,7 +148,7 @@ a {
 
 .vehicle-container div {
   border: 1px #ccc solid;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 0 1rem 0 1rem;
   margin-left: 10px;
   margin-right: 10px;
 }

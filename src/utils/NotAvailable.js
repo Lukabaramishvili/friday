@@ -1,16 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class NotAvailable extends Component {
-
-  render() {
-    return (
-      <div className="simple-container">
-        <p>{this.props.text}</p>
-        <a href='/selectVehicle' className="a-btn">Back</a>
-      </div>
-    );
-  }
-
+export default (props) => {
+  return (
+    <div className="simple-container">
+      <p>{props.text}</p>
+      <a href='/selectVehicle' className="a-btn">Back</a>
+    </div>
+  );
 }
-
-export default NotAvailable;

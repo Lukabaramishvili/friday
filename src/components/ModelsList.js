@@ -43,11 +43,11 @@ class ModelsList extends Component {
     } else if (isLoading){
       return <Spinner />
     }else if (models.length === 0) {
-      return <NotAvailable text={`Not Available for ${make}`}/>
+      return <NotAvailable text={`No Such Model Available for ${make}`}/>
     } else {
     return (
       <div>
-      List of Models
+      <h3>List of Models</h3>
         <ul>
         {
           models.map((model, id) => {
