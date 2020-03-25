@@ -124,13 +124,6 @@ a {
   background: #5352ed;
 }
 
-.back-btn {
-  padding-left: 1rem;
-  color: #6400e4;
-  font-size: 16px;
-  font-weight: 500;
-}
-
 .spinner-icon {
   width: 30px;
   margin: 200px auto;
@@ -148,7 +141,7 @@ a {
 
 .vehicle-container div {
   border: 1px #ccc solid;
-  padding: 0 1rem 0 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -158,4 +151,21 @@ a {
   margin-bottom: 5px;
   background: #fff;
   font-size: 0.8em;
+  cursor: pointer;
+}
+
+.vehicle-card p {
+  margin: 0.2rem;
+}
+
+.vehicle-card:hover {
+  background: #5352ed;
+  color: #fff;
+}
+
+.back-btn {
+  padding-left: 1rem;
+  color: #6400e4;
+  font-size: 16px;
+  font-weight: 500;
 }

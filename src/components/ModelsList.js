@@ -43,7 +43,7 @@ class ModelsList extends Component {
     } else if (isLoading){
       return <Spinner />
     }else if (models.length === 0) {
-      return <NotAvailable text={`No Such Model Available for ${make}`}/>
+      return <NotAvailable text={`Models Not Available for ${make}`}/>
     } else {
     return (
       <div>
