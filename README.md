@@ -5,7 +5,7 @@
 3. `npm install` to install all the dependencies
 
 ### Run 
-1. Start server `apiserver/server.js`
+1. Start server `node apiserver/server.js`
 2. `npm start` to start the application
 
 ### Built With
