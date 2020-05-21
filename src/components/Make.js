@@ -10,9 +10,9 @@ class Make extends Component {
   render() {
     const { make } = this.props
     return (
-        <div className="list-container">
-          <button className="list-btn" value={make} onClick={this.handleClick}>{make}</button>
-        </div>
+      <div className="list-container">
+        <button className="list-btn" value={make} onClick={this.handleClick}>{make}</button>
+      </div>
     );
   }
 
