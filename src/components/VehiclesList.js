@@ -1,38 +1,29 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import Vehicle from './Vehicle';
 import NotAvailable from '../utils/NotAvailable';
 import Spinner from '../utils/Spinner';
 
-class VehiclesList extends Component {
-    state = {
-      error: null,
-      vehicles: [],
-      isLoading: true
+const VehiclesList = (props) => {
+  const [vehicles, setVehicles] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+    async function fetchData() {
+      const make = props.location.pathname.split('/')[1];
+      const model = props.location.pathname.split('/')[2];
+      const res = await fetch(`http://localhost:8080/api/vehicles?make=${make}&model=${model}`);
+      res
+      .json()
+      .then(data => setVehicles(data))
+      .then(loading => setIsLoading(false))
+      .catch(err => setError(err));
     }
 
-    componentDidMount() {
-      this.getVehicles()
-    }
+    useEffect(() => {
+      fetchData()
+    }, []);
 
-    getVehicles = () => {
-      const make = this.props.location.pathname.split('/')[1];
-      const model = this.props.location.pathname.split('/')[2];
-      fetch(`http://localhost:8080/api/vehicles?make=${make}&model=${model}`)
-      .then(res => res.json())
-      .then(data => this.setState({
-        vehicles: data,
-        isLoading: false
-      }),
-      (error) => {
-        this.setState({
-          error,
-        });
-      }
-     )
-    }
 
-    render() {
-      const { vehicles, error, isLoading } = this.state
       if (error) {
         throw error;
       } else if (isLoading){
@@ -53,8 +44,6 @@ class VehiclesList extends Component {
         </div>
         </>
       );
-    }
-
   }
 
 export default VehiclesList;

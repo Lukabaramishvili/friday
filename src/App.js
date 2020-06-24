@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles.css';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import NavBar from './utils/NavBar';
@@ -8,9 +8,8 @@ import VehiclesList from './components/VehiclesList';
 import ErrorBoundary from './components/ErrorBoundary';
 import NoMatchPage from './utils/NoMatchPage';
 
-class App extends Component {
+function App() {
 
-  render() {
     return (
       <Router>
         <NavBar />
@@ -24,8 +23,6 @@ class App extends Component {
         </ErrorBoundary>
       </Router>
     );
-  }
-
 }
 
 export default App;
